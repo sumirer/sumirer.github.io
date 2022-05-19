@@ -21,7 +21,7 @@
     <meta name="description" content="">
     <meta property="og:type" content="website">
 <meta property="og:title" content="Sumirer&#39;s Blog">
-<meta property="og:url" content="https://sumirer.github.io/archives/2022/02/index.html">
+<meta property="og:url" content="https://sumirer.github.io/archives/2022/05/index.html">
 <meta property="og:site_name" content="Sumirer&#39;s Blog">
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="Sumirer">
@@ -428,51 +428,26 @@
             
         
         <article class="index-post">
-            <a class="abstract-title" href="/2022/02/28/%E6%B5%85%E8%B0%88Css%E6%B2%BB%E7%90%86/">
+            <a class="abstract-title" href="/2022/05/19/http-proxy/">
                 
-                <span class="abstract-title-text">浅谈Css治理</span>
+                <span class="abstract-title-text">设置代理和取消代理(http_proxy )</span>
             </a>
             <div class="abstract-content">
-                项目CSS治理及改进前言在常规的项目中，例如目前本人在开发的各个项目中，都有个出现诸如css编写大量重复片段、无管理模式化、缺少可维护性等缺点，在此，对一些css常见问题进行改进，集中治理样式管理混乱问题
-问题梳理在项目中，对于CSS的编写和使用都局限于页面的显示和效果的重现，对于小型项目来说，因为项目页面少，所以不会产生较大的CSS打包文件，对于项目的维护和修改等操作来说，都是无关痛痒的，因为样式表的量在哪里，无论何时，都能准确找到需要修改的地方，然而在一些大型项目中，弊端就变得显而易见了。例如在很多的页面中，都存在同样的一个按钮样式，对于现有的项目思维来说，应该是先进行组件化的开发，...
-            </div>
-            <!-- read more -->
-            
-            <div class="abstract-post-meta">
-                <!-- date -->
-                <div class="abstract-date" title="Last updated: 2022/02/28">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2022/02/28</span>
-                </div>
-                <!-- tags -->
-                
-            </div>
-        </article>
-        <div class="index-post-divider"></div>
-    
-        
-        
-        
-        
-            
-        
-        <article class="index-post">
-            <a class="abstract-title" href="/2022/02/25/hello-world/">
-                
-                <span class="abstract-title-text">Hello World</span>
-            </a>
-            <div class="abstract-content">
-                Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick StartCreate a new post1$ hexo new &quot;My New Post&quot;
+                临时设置代理：
+12export http_proxy=“http://proxy-XXXXX”export https_proxy=“https://proxy-XXXXX”
+临时取消代理：
+1234unset http_proxyunset https_proxy
+查看代理：
+1env | grep xxx
+如果想要使代理服务器永久生效，可以修改 /etc/profile文件 ，在profile 中添加或者删除。
 
-More info: Writing
-Run server1$ hexo ...
             </div>
             <!-- read more -->
             
             <div class="abstract-post-meta">
                 <!-- date -->
-                <div class="abstract-date" title="Last updated: 2022/02/25">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2022/02/25</span>
+                <div class="abstract-date" title="Last updated: 2022/05/19">
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2022/05/19</span>
                 </div>
                 <!-- tags -->
                 
@@ -577,21 +552,14 @@ Run server1$ hexo ...
         
         
         
-        
-        
-        
-        
-        
     
-        
-        
     
     
     
     
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 2
+        Total : 1
         </div>
         <!-- search  -->
         
@@ -607,14 +575,8 @@ Run server1$ hexo ...
             
         
         <li class="archive-post-item">
-            <span class="archive-post-date">02/28</span>
-            <a class="archive-post-title" href="/2022/02/28/%E6%B5%85%E8%B0%88Css%E6%B2%BB%E7%90%86/">浅谈Css治理</a>
-        </li>
-    
-        
-        <li class="archive-post-item">
-            <span class="archive-post-date">02/25</span>
-            <a class="archive-post-title" href="/2022/02/25/hello-world/">Hello World</a>
+            <span class="archive-post-date">05/19</span>
+            <a class="archive-post-title" href="/2022/05/19/http-proxy/">设置代理和取消代理(http_proxy )</a>
         </li>
     
     </div>
